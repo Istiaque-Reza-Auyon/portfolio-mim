@@ -40,7 +40,7 @@ const DigitalMarketingPortfolio = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -52,7 +52,7 @@ const DigitalMarketingPortfolio = () => {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-             Fahima Islam Mim
+              Fahima Islam Mim
             </div>
             <div className="hidden md:flex space-x-8">
               {['About', 'Portfolio', 'Services', 'Contact'].map((item) => (
